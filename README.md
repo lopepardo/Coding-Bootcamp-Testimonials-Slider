@@ -1,5 +1,11 @@
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
+### Challenge of frontendmentor.io
+https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL
+
+### Project deployment
+https://coding-bootcamp-testimonials-slider-l.vercel.app/
+
 ![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
