@@ -1,0 +1,157 @@
+body {
+  height: 100vh;
+
+  background: url("../img/pattern-curve.svg") no-repeat left bottom;
+  background-size: 310px;
+
+  @include large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: 500px;
+  }
+}
+
+.wrapper {
+  height: 95vh;
+  @include large {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  @include large {
+    height: 500px;
+    width: 870px;
+    position: absolute;
+  }
+
+  // Imagen + buttons
+  &__info {
+    height: 330px;
+    background: url("../img/pattern-bg.svg") no-repeat center 15px;
+    background-size: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include large {
+      height: 500px;
+      width: 500px;
+      background-size: 500px;
+      position: absolute;
+      right: 0;
+    }
+  }
+  &__img-btn {
+    width: 240px;
+    position: relative;
+    @include large {
+      width: 380px;
+    }
+  }
+  &__img {
+    display: none;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 50px 80px -50px $dark-blue;
+  }
+  &__btns {
+    width: 50px;
+    text-align: center;
+    padding: 8px 10px;
+    background-color: white;
+    border-radius: 25px;
+
+    position: absolute;
+    bottom: -16px;
+    left: calc(50% - 35px);
+
+    @include large {
+      width: 60px;
+      padding: 10px 15px;
+      left: 40px;
+    }
+  }
+  &__prev {
+    margin-right: 10px;
+  }
+  &__next {
+    margin-left: 10px;
+  }
+  &__prev,
+  &__next {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    img {
+      width: 9px;
+    }
+  }
+
+  // Profile
+  &__profile-bg {
+    display: none;
+
+    height: 250px;
+    background: url("../img/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 70px;
+
+    @include large {
+      width: 480px;
+      height: auto;
+      position: absolute;
+      top: 140px;
+      background-position: 75px top;
+    }
+  }
+
+  &__profile {
+    margin: 0;
+    text-align: center;
+
+    @include large {
+      height: 240px;
+      text-align: start;
+      font-size: 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+  }
+  &__quote {
+    margin: 35px auto;
+    margin-bottom: 20px;
+    width: 320px;
+
+    @include large {
+      margin-bottom: 20px;
+      width: auto;
+    }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 2px;
+  }
+  &__role {
+    font-weight: 500;
+    font-size: 1rem;
+    color: $grayish-blue;
+  }
+}
+
+.show {
+  display: block;
+}

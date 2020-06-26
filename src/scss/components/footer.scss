@@ -1,0 +1,13 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $grayish-blue;
+}
+.attribution {
+  a {
+    color: $dark-blue;
+  }
+  a:hover {
+    color: hsl(240, 9%, 59%);
+  }
+}
